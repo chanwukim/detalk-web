@@ -10,6 +10,8 @@
   --color-foreground-on-primary: var(--foreground-on-primary);
   --color-foreground-muted: var(--foreground-muted);
   --color-accent: var(--accent);
+  --color-warning: var(--warning);
+  --color-link: var(--link);
   --color-muted: var(--muted);
   --color-border: var(--border);
 
@@ -68,7 +70,7 @@
     --muted: var(--color-gray-100);
 
     --foreground: var(--color-gray-900);
-    --foreground-muted: var(--color-gray-600);
+    --foreground-muted: var(--color-gray-500);
     --foreground-on-primary: var(--color-white);
 
     --background: var(--color-white);

@@ -1,5 +1,6 @@
 import React from "react";
 
+import cn from "@/lib/cn";
 import type { PropsWithChildren } from "@/lib/types";
 
 /** 
@@ -42,9 +43,14 @@ export function AppLayoutContent({ children }: PropsWithChildren) {
   );
 }
 
-export function AppLayoutContentHeader({ children }: PropsWithChildren) {
+export function AppLayoutContentHeader({
+  children,
+  className,
+}: PropsWithChildren<{ className?: string }>) {
   return (
-    <header className="bg-background sticky top-0 z-10 flex h-52 items-center">{children}</header>
+    <header className={cn("bg-background sticky top-0 z-10 flex h-52 items-center", className)}>
+      {children}
+    </header>
   );
 }
 
